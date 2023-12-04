@@ -1,0 +1,88 @@
+.dheader{
+    display: flex;
+    width: 100%;
+}
+.logo{
+    width: 250px;
+}
+.logofon{
+    width: 100%;
+    height: 100px;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+header{
+    background-color: aliceblue;
+    width: 100%;
+    
+}
+
+body {
+    width: 100%;
+    height: 99%;
+    background-image: url('images/pintores-colombianos-cano.jpeg');
+    background-size: cover;
+ }
+
+.contenedorL{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    width: 500px;
+    height: 600px;
+    border: 2px solid rgb(182, 182, 182);
+    box-shadow: 10px 5px 5px rgba(0, 0, 0.242);
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.contenedorL img{
+    width: 200px;
+    height: 200px;
+    opacity: 0.8;
+}
+
+.contenedorL input{
+    padding: 10px 35px;
+    border-radius: 10px;
+}
+
+.contenedorL button{
+    border: none;
+    padding: 14px 28px; 
+    cursor: pointer; 
+    border-radius: 5px;;
+}
+footer{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(0, 196, 160, 0.573);
+    
+}
+
+.img_footer{
+    height: 60px;
+    width: 150px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.h3footer{
+    padding-top: 20px;
+}
+
+.lista_footer{
+    list-style: none;
+   
+}
+
+.lista_footer li{
+    margin-bottom: 5px;
+}
+
+.lista_footer li a{
+   text-decoration: none;
+   color: black;
+}

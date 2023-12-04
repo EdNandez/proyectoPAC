@@ -1,0 +1,205 @@
+.dheader{
+    display: flex;   
+}
+
+.logo{
+    width: 250px;
+}
+
+.logofon{
+    width: 100%;
+    height: 100px;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+main{
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 75px;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(0, 196, 160, 0.573)   
+}
+
+.img_footer{
+    height: 60px;
+    width: 150px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.h3footer{
+    padding-top: 20px;
+}
+
+.lista_footer{
+    list-style: none; 
+}
+
+.lista_footer li{
+    margin-bottom: 5px;
+}
+
+.lista_footer li a{
+   text-decoration: none;
+   color: black;
+}
+
+.container_derechos{
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.t_catalogo{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.titulo_tecnicas{
+    font-family: regular;
+    font-size: 50px;
+}
+
+.galeria_p{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalogo{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px rgb(222, 226, 230) solid;
+    margin-bottom: 20px;
+}
+
+.card{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+
+/* carrusel artistas */
+.artistas{
+    width: auto;
+    height: 300px;
+    display: flex;
+    border: 0px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.carousel-item img{
+    object-fit: contain;
+    height: 300px;    
+}
+
+.art_dest{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 75px;
+}
+/* transicion de imagen artista destacado */
+.dOne {
+    width: 200px;
+    height: 200px;
+    margin: 1%;
+    position: relative;
+}
+
+.dOne img:first-child {
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    padding-bottom: 0px;
+}
+
+.img2{ 
+    opacity: 0;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 210px;
+    height: 130%;
+    z-index: 1;   
+}
+
+.img2:hover{
+    border-radius: 20px;
+    transform: translateY(-10%);
+    opacity: 100%;
+    transition: 1s ease;
+}
+
+.dOne:hover .img1{
+    background-image: linear-gradient(to bottom, transparent 80%), white;
+    opacity: 30%;
+    transition: .8s ease;
+    transform: perspective(250px) rotateX(35deg) translateY(-5%) translateZ(20px) ;
+    scale: .9;
+}
+
+/* artista destacado */
+.artista_ley{
+    text-align: center;
+    margin-left: 20px;
+}
+
+blockquote{
+    text-align: justify;
+}
+
+
+
+@font-face{
+    font-family: regular;
+    src: url(fonts/Satisfy-Regular.ttf);
+}
+
+#maincard{
+    margin: 1%;
+    width: 98%;
+    height: 90%;
+    object-fit: cover;
+
+}
+#maincont{
+    margin-left: -30px;
+    width: 45%;
+    margin-right: 10px;
+}
+
+
+@media (max-width: 700px){
+    .art_dest{
+        flex-direction: column;
+    }
+}
